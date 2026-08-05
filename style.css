@@ -14,3 +14,25 @@ body{
   display:flex;
   height:100vh;
 }
+.sidebar{
+  width:260px;
+  background:#1f2937;
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  box-shadow:4px 0 15px rgba(0,0,0,.3);
+}
+.sidebar h2{
+  tex-align:center;
+  margin-bootom:10px;
+}
+.sidebar label{
+  font-size:14px;
+  color:#d1d5db;
+}
+.sidebar hr{
+  border:none;
+  border-top:1px solid #274151;
+  margin:10px 0;
+}
