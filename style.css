@@ -89,4 +89,24 @@ input[type="color"]{
   font-weight:600;
   color:#60a5fa;
 }
-
+main{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+header{
+  text-align:center;
+  margin-bottom:20px;
+}
+header h1{
+  font-size:38px;
+}
+header p{
+  color:#9ca3af;
+  margin-bottom:8px;
+}
+  
+ma
