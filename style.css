@@ -108,5 +108,13 @@ header p{
   color:#9ca3af;
   margin-bottom:8px;
 }
+canvas{
+  background:white;
+  border-radius:15px;
+  box-shadow:0 10px  30px rgba(0,0,0,.35);
+  cursor:crosshair;
+  width:90%;
+  max-width:1000px;
+  height:600px;
+}
   
-ma
