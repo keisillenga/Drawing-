@@ -117,4 +117,22 @@ canvas{
   max-width:1000px;
   height:600px;
 }
+@media(max-width:900px){
+  .app{
+    flex-direction:column;
+  }
+  .sidebar{
+    width:100%;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .sidebar h2{
+    width:100%;
+  }
+  canvas{
+    width:95%;
+    height:450px;
+  }
+}
   
