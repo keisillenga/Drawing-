@@ -11,3 +11,22 @@ const clearBtn = document.getElementById("claerBtn");
 const saveBtn = document.getElementById("saveBtn");
 const undoBtn = document.getElementById("undoBtn");
 const redoBtn = document.getElementById("redoBtn");
+
+canvas.width = 1000;
+canvas.height = 600;
+
+let drawing = false;
+let brushColor = "#000000";
+let brushSize = 5;
+
+let history = [];
+let redoHistory = [];
+
+function saveState() {
+  history.push(canvas.toDateURL()):
+  if (history.length >30) {
+    history.shift();
+  }
+  redoHistory = [];
+}
+saveState();
