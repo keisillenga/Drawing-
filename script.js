@@ -30,3 +30,11 @@ function saveState() {
   redoHistory = [];
 }
 saveState();
+
+function  getMousePos(e){
+  const rect = camvas.getBoundingClientRect();
+  return{
+    x: (e.clientX - rect.left) * (canvas.width / rect.width),
+    y: (e.clientY - rect.top) * (canvas.height / rect.height)
+  };
+}
