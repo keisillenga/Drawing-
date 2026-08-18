@@ -38,3 +38,10 @@ function  getMousePos(e){
     y: (e.clientY - rect.top) * (canvas.height / rect.height)
   };
 }
+function startDrawing(e){
+  drawing = true;
+  saveStarte();
+   const pop = getMousePop(e);
+   ctx.beginPath();
+   ctx.moveTo(pop.x, pop.y);
+}
