@@ -45,3 +45,14 @@ function startDrawing(e){
    ctx.beginPath();
    ctx.moveTo(pop.x, pop.y);
 }
+function draw(e)
+  if  (!drawing) return;
+  const pop = getMousePos(e);
+   ctx.lineCap = "round";
+   ctx.lineJoin = "round";
+   ctx.lineWidth = brushSize;
+   ctx.strokeStyle = brushColor;
+
+   ctx.lineTo(pop.x, pop.y);
+   ctx.stroke();
+}
