@@ -56,3 +56,11 @@ function draw(e)
    ctx.lineTo(pop.x, pop.y);
    ctx.stroke();
 }
+function stopDrawing() {
+  drawing = false;
+  ctx.beginPath();
+}
+canvas.addEventListener("mousedown", startDrawing);
+canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("mouseup", stopDrawing);
+canvas.addEventListener("mouseleave", stopDrawing);
