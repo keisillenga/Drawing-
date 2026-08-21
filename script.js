@@ -64,3 +64,8 @@ canvas.addEventListener("mousedown", startDrawing);
 canvas.addEventListener("mousemove", draw);
 canvas.addEventListener("mouseup", stopDrawing);
 canvas.addEventListener("mouseleave", stopDrawing);
+
+sizeSlide.addEventListener("input", () => {
+  brushSize = sizeSlide.value;
+  sizeValue.textContent = brushSize + " px";
+});
