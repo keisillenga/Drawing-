@@ -69,3 +69,10 @@ sizeSlide.addEventListener("input", () => {
   brushSize = sizeSlide.value;
   sizeValue.textContent = brushSize + " px";
 });
+colorPicker.addEventListener("input", () => {
+  brushColor = colorPicker.value;
+});
+pencilBtn.addEventListener("click", () => {
+  brushColor = colorPicker.value;
+});
+
