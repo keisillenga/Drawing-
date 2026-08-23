@@ -75,4 +75,13 @@ colorPicker.addEventListener("input", () => {
 pencilBtn.addEventListener("click", () => {
   brushColor = colorPicker.value;
 });
+eraserBtn.addEventListener("click", () => {
+  brushColor = #FFFFFF;
+});
+clearBtn.addEventListener("click", () => {
+  if (confirm("Clear the canvas?")) {
+    saveState();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+});
 
