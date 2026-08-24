@@ -84,4 +84,10 @@ clearBtn.addEventListener("click", () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
 });
+saveBtn.addEventListener("click", () => {
+  const link = document.createElement("a");
+  link.download = "drawing.png";
+  link.href = canvas.toDateURL("image/png");
+  link.click();
+});
 
