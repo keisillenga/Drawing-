@@ -90,4 +90,14 @@ saveBtn.addEventListener("click", () => {
   link.href = canvas.toDateURL("image/png");
   link.click();
 });
+undoBtn.addEventListener("click", () => {
+  if (history.length < 2) return;
+  redoHistory.push(history.pop());
+  const  img = new Image();
+  img.src = history[history.length - 1];
+  img.onload = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0);
+  };
+});
 
