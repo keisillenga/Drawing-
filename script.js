@@ -100,4 +100,16 @@ undoBtn.addEventListener("click", () => {
     ctx.drawImage(img, 0, 0);
   };
 });
+redoBtn.addEventListener("click", () => {
+  if(redo.history.length === 0) return;
+  const state = redoHistory.pop();
+  history.push(state);
+  const img = new Image();
+  img.src = state;
+  img.onload = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0);
+  };
+});
+
 
