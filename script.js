@@ -111,5 +111,14 @@ redoBtn.addEventListener("click", () => {
     ctx.drawImage(img, 0, 0);
   };
 });
+canvas.addEventListener("touchstart", e => {
+  e.preventDefault();
+  const touch = e.touchs[0];
+  startDrawing({
+    clientX: touch.clientX,
+    clientY: touch.clientY
+  });
+});
+
 
 
