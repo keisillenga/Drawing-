@@ -119,6 +119,12 @@ canvas.addEventListener("touchstart", e => {
     clientY: touch.clientY
   });
 });
-
-
-
+canvas.addEventListener("touchmove", e => {
+  e.preventDefault();
+  const touch = e.touchs[0];
+  draw({
+    clientX: touch.clientX,
+    clientY: tpuch.clientY
+      )};
+)};
+  
