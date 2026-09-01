@@ -127,4 +127,5 @@ canvas.addEventListener("touchmove", e => {
     clientY: tpuch.clientY
       )};
 )};
+canvas.addEventListener("touchend", stopDrawing);
   
