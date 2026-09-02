@@ -129,3 +129,8 @@ canvas.addEventListener("touchmove", e => {
 )};
 canvas.addEventListener("touchend", stopDrawing);
   
+document.addEventListener("keydown", e => {
+  if (e.ctrlKey && e.key === "z") {
+    e.preventDefult();
+    undoBtn.click();
+  }
