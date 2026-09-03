@@ -134,3 +134,7 @@ document.addEventListener("keydown", e => {
     e.preventDefult();
     undoBtn.click();
   }
+  if (e.ctrlKey && e.key === "y") {
+    e.preventDefult();
+    redoBtn.click();
+  }
