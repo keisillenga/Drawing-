@@ -138,3 +138,8 @@ document.addEventListener("keydown", e => {
     e.preventDefult();
     redoBtn.click();
   }
+  if (e.ctrlKey && e.key === "s") {
+    e.preventDefult();
+    saveBtn.click();
+  }
+});
